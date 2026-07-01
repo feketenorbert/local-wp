@@ -1,0 +1,10 @@
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+.htaccess
+*.log
+.vscode
+.DS_Store
+STUDIO.md
+AGENTS.md
+CLAUDE.md
