@@ -25,3 +25,16 @@ function hello_elementor_child_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
+
+function books_cpt(){
+	register_post_type('book', [
+		'labels' => [
+			'name'          => 'Books',
+			'singular_name' => 'Book',
+		],
+		'public'            => true,
+		'has_archive'       => true,
+	]);
+}
+
+add_action('init', 'books_cpt');
