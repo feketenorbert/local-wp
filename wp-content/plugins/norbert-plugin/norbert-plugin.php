@@ -103,7 +103,7 @@ class norbertPlugin
 
             unset($labels);
             unset($args);
-            // Register CUSTOM TAXONOMY - Property Type
+            // Register CUSTOM TAXONOMY - Type
             $labels = [
                 "name" => esc_html_x(
                     "Types",
@@ -150,7 +150,7 @@ class norbertPlugin
                 "labels" => $labels,
             ];
 
-            register_taxonomy("property-type", "car", $args);
+            register_taxonomy("type", "car", $args);
     }
     static function activation()
     {
