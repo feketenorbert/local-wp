@@ -34,7 +34,31 @@ function books_cpt(){
 		],
 		'public'            => true,
 		'has_archive'       => true,
+		'taxonomies' => ['genre', 'author', 'publication_year'],
 	]);
 }
 
 add_action('init', 'books_cpt');
+
+function books_taxonomies() {
+
+    register_taxonomy('author', 'book', [
+        'label'        => 'Authors',
+        'hierarchical' => false,
+        'public'       => true,
+    ]);
+
+	register_taxonomy('genre', 'book', [
+        'label'        => 'Genre',
+        'hierarchical' => true,
+        'public'       => true,
+    ]);
+
+	register_taxonomy('publication_year', 'book', [
+        'label'        => 'Year of publication',
+        'hierarchical' => false,
+        'public'       => true,
+    ]);
+}
+
+add_action('init', 'books_taxonomies');

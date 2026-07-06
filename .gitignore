@@ -8,3 +8,5 @@ wp-content/cache/
 STUDIO.md
 AGENTS.md
 CLAUDE.md
+wp-content/database/.ht.sqlite
+wp-content/mu-plugins
