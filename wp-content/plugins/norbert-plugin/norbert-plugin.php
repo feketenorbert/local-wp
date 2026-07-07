@@ -16,17 +16,20 @@
  */
 
 // Exit if accessed directly
+/*
 if (!defined("ABSPATH")) {
     exit();
 }
-
+*/
 /*
  * Define plugin constants
  */
+/*
 define("NORBERT_PLUGIN_VERSION", "1.0.0");
 define("NORBERT_PLUGIN_DIR", plugin_dir_path(__FILE__));
 define("NORBERT_PLUGIN_URL", plugin_dir_url(__FILE__));
-
+*/
+/*
 class norbertPlugin
 {
     public function register()
@@ -173,3 +176,4 @@ if (class_exists("norbertPlugin")) {
     register_activation_hook(__FILE__, ["norbertPlugin", "activation"]);
     register_deactivation_hook(__FILE__, ["norbertPlugin", "deactivation"]);
 }
+*/
