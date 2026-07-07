@@ -54,8 +54,8 @@ function books_taxonomies() {
         'public'       => true,
     ]);
 
-	register_taxonomy('publication_year', 'book', [
-        'label'        => 'Year of publication',
+	register_taxonomy('publisher', 'book', [
+        'label'        => 'Publisher',
         'hierarchical' => false,
         'public'       => true,
     ]);
