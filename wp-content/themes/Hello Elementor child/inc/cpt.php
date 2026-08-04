@@ -33,7 +33,7 @@ function cars_register_cpt(){
 add_action( "init", "cars_register_cpt" );
 
 // ══════════════════════════════════════════
-// 2. CPT - MARCA
+// 2. Taxonomy - MARCA
 // ══════════════════════════════════════════
 
 function cars_register_taxonomy_marca(){

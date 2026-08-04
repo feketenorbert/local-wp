@@ -12,6 +12,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
 */
 
+/* stilizati din style.css aceste carduri */
+
 .last-3-cars {
   display: flex;
   flex-direction: row;
@@ -39,4 +41,43 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+}
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-title {
+  width: 30%;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.before-filter-message {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #246203;
 }

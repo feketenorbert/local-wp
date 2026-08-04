@@ -29,6 +29,7 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
 require_once get_stylesheet_directory() . '/inc/cpt.php';
 
+/* creare shortcode care sa listeze ultimele 3 cpt-uri sub forma de carduri*/
 add_shortcode('last_3_cars_shortcode', 'last_3_cars');
 
 function last_3_cars() {
@@ -63,3 +64,8 @@ function last_3_cars() {
 	wp_reset_postdata();
 
 }
+
+// adaugati un mesaj inainte de sectiuena de filtrare dar nu din Elementor, ci prin hooks de tip actions/filters 
+add_action('before_filter', function() {
+    echo '<div class="before-filter-message">Bine ați venit la arhiva de mașini! Folosiți filtrul de mai jos pentru a găsi mașina dorită.</div>';
+});
